@@ -1,1 +1,6 @@
 C:\Users\remcovisser\Documents\GitHub\Keuzevak\Week1\Week1\bin\Debug\Week1.exe.config
+C:\Users\remcovisser\Documents\GitHub\Keuzevak\Week1\Week1\bin\Debug\Week1.exe
+C:\Users\remcovisser\Documents\GitHub\Keuzevak\Week1\Week1\bin\Debug\Week1.pdb
+C:\Users\remcovisser\Documents\GitHub\Keuzevak\Week1\Week1\obj\Debug\Week1.csprojResolveAssemblyReference.cache
+C:\Users\remcovisser\Documents\GitHub\Keuzevak\Week1\Week1\obj\Debug\Week1.exe
+C:\Users\remcovisser\Documents\GitHub\Keuzevak\Week1\Week1\obj\Debug\Week1.pdb
