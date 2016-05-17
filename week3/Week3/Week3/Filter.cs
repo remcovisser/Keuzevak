@@ -10,13 +10,12 @@ namespace Week3
     {
         public static string Present(this int value)
         {
-            float temp = value / 100.0f;
-            return ("$" + temp + 0).Replace(".", ",");
+            return ("$" + value / 100.0f + 0).Replace(".", ",");
         }
 
         public static float Value(this string value)
         {
-            return float.Parse( value.Replace("$", ""));
+            return float.Parse(value.Replace("$", ""));
         }
     }
 }
