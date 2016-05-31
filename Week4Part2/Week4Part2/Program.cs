@@ -16,10 +16,12 @@ namespace Week4Part2
         static void Main(string[] args)
         {
             string[] fruits = {"apple", "peer", "orange", "banana", "apple", "peer", "orange", "banana"};
+
             foreach (var item in ShowMeSomeFruits(fruits))
             {
                 Console.WriteLine(item.Name);
             }
+            Console.WriteLine(Count(ShowMeSomeFruits(fruits)));
             Console.ReadLine();
         }
 
@@ -28,11 +30,26 @@ namespace Week4Part2
         {
             foreach (var item in fruits)
             {
-                if (item == "apple")
+                yield return new Fruit { Name = item }; 
+            }
+        }
+
+        public static string Count(IEnumerable<Fruit> fruits)
+        {
+            int appleCount = 0;
+            int peerCount = 0;
+            foreach (var item in fruits)
+            {
+                if (item.Name == "apple")
                 {
-                    yield return new Fruit { Name = "apple" };
+                    appleCount++;
+                }
+                else if (item.Name == "peer")
+                {
+                    peerCount++;
                 }
             }
+            return $"Aantal appels: {appleCount} en aantal peren:    {peerCount}";
         }
     }
 }
