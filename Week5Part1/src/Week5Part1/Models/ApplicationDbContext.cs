@@ -19,6 +19,7 @@ namespace Week5Part1.Models
         }
         public DbSet<Subscription> Subscription { get; set; }
         public DbSet<TodoItems> TodoItems { get; set; }
+        public DbSet<Groups> Groups { get; set; }
      
     }
 }

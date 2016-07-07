@@ -1,17 +1,8 @@
 @model Week5Part1.Models.TodoItems
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Details";
 }
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Details</title>
-</head>
-<body>
 
 <div>
     <h4>TodoItems</h4>
@@ -22,6 +13,12 @@
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Group_id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Group_id)
         </dd>
         <dt>
             @Html.DisplayNameFor(model => model.Name)
@@ -41,5 +38,3 @@
     <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </p>
-</body>
-</html>

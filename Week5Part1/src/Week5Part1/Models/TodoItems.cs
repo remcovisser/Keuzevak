@@ -9,6 +9,8 @@ namespace Week5Part1.Models
     {
             public int Id { get; set; }
 
+            public int Group_id { get; set; }
+
             public string Name { get; set; }
 
             public DateTime Date { get; set; }

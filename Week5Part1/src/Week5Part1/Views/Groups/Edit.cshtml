@@ -1,29 +1,16 @@
-@model Week5Part1.Models.TodoItems
+@model Week5Part1.Models.Groups
 
 @{
     ViewData["Title"] = "Edit";
 }
 
+
 <form asp-action="Edit">
     <div class="form-horizontal">
-        <h4>TodoItems</h4>
+        <h4>Groups</h4>
         <hr />
         <div asp-validation-summary="ValidationSummary.ModelOnly" class="text-danger"></div>
         <input type="hidden" asp-for="Id" />
-        <div class="form-group">
-            <label asp-for="Date" class="col-md-2 control-label"></label>
-            <div class="col-md-10">
-                <input asp-for="Date" class="form-control" />
-                <span asp-validation-for="Date" class="text-danger" />
-            </div>
-        </div>
-        <div class="form-group">
-            <label asp-for="Group_id" class="col-md-2 control-label"></label>
-            <div class="col-md-10">
-                <input asp-for="Group_id" class="form-control" />
-                <span asp-validation-for="Group_id" class="text-danger" />
-            </div>
-        </div>
         <div class="form-group">
             <label asp-for="Name" class="col-md-2 control-label"></label>
             <div class="col-md-10">
@@ -32,10 +19,10 @@
             </div>
         </div>
         <div class="form-group">
-            <label asp-for="Status" class="col-md-2 control-label"></label>
+            <label asp-for="User_id" class="col-md-2 control-label"></label>
             <div class="col-md-10">
-                <input asp-for="Status" class="form-control" />
-                <span asp-validation-for="Status" class="text-danger" />
+                <input asp-for="User_id" class="form-control" />
+                <span asp-validation-for="User_id" class="text-danger" />
             </div>
         </div>
         <div class="form-group">

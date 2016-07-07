@@ -8,9 +8,10 @@ using Week5Part1.Models;
 namespace Week5Part1.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20160707084423_groups")]
+    partial class groups
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "7.0.0-rc1-16348")
@@ -153,8 +154,6 @@ namespace Week5Part1.Migrations
 
                     b.Property<string>("Name");
 
-                    b.Property<int>("User_id");
-
                     b.HasKey("Id");
                 });
 
@@ -182,8 +181,6 @@ namespace Week5Part1.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<DateTime>("Date");
-
-                    b.Property<int>("Group_id");
 
                     b.Property<string>("Name");
 
